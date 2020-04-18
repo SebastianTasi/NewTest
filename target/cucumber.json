@@ -1,0 +1,93 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2020-04-18T16:55:07.399Z",
+        "before": [
+          {
+            "result": {
+              "duration": 10302558400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 6,
+        "name": "Verify that 100 results are displayed",
+        "description": "",
+        "id": "test1;verify-that-100-results-are-displayed",
+        "after": [
+          {
+            "result": {
+              "duration": 695039000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 7085440500,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the user should open browser page on",
+            "match": {
+              "location": "Test1StepDefs.the_user_should_open_browser_page_on()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5124372600,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user is clicking View All",
+            "match": {
+              "location": "Test1StepDefs.user_is_clicking_View_All()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 48276900,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "the results displayed \u003d 100",
+            "match": {
+              "arguments": [
+                {
+                  "val": "100",
+                  "offset": 24
+                }
+              ],
+              "location": "Test1StepDefs.the_results_displayed(Integer)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@wip"
+          }
+        ]
+      }
+    ],
+    "name": "Test1",
+    "description": "",
+    "id": "test1",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/Test1.feature",
+    "tags": []
+  }
+]
