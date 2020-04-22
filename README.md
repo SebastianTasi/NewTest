@@ -45,6 +45,8 @@ This is maven project and tests are written in Cucumber Gherkin language . so we
 
 Go to your project directory from terminal and hit following commands
 
+-- mvn clean test ( This is the main command of running Test from Terminal and getting the Cucumber HTML reports in Target Foldersoi )
+
 -- mvn test (defualt will run on local firefox browser).
 
 -- mvn test "-Dbrowser=chrome" (to use any other browser).
