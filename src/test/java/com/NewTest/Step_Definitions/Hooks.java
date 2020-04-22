@@ -1,30 +1,24 @@
 package com.NewTest.Step_Definitions;
 
-import com.NewTest.Pages.CoinMarketPage;
 import com.NewTest.Utilities.Driver;
 import io.cucumber.core.api.Scenario;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 
-import java.util.concurrent.TimeUnit;
-import io.cucumber.java.After;
-import io.cucumber.java.Before;
-import org.openqa.selenium.TakesScreenshot;
 
 
 public class Hooks {
 
+    static final Logger logger = LogManager.getLogger(Hooks.class);
+
 
     @Before
-    public void setUp(){
-
-
-        Driver.get().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-        Driver.get().manage().window().fullscreen();
-
-        CoinMarketPage coinMarketPage = new CoinMarketPage();
+    public void before(Scenario scenario){
+        logger.info("####### SCENARIO: " + scenario.getName() + " ####### ");
     }
 
     @After
@@ -34,7 +28,7 @@ public class Hooks {
             final byte[] screenshot = ((TakesScreenshot) Driver.get()).getScreenshotAs(OutputType.BYTES);
             scenario.embed(screenshot,"image/png");
         }
-
+        logger.info("======= " + scenario.getStatus() + " === " + scenario.getName() + " =======");
         Driver.closeDriver();
     }
 }

@@ -9,58 +9,58 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.safari.SafariDriver;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
+import java.util.concurrent.TimeUnit;
+
+/**
+ * Utility Class that initialize WebDriver instance
+ * Singleton Pattern
+ */
 
 public class Driver {
     private Driver() {
     }
 
-    private static InheritableThreadLocal<WebDriver> driverPool = new InheritableThreadLocal<>();
+    static final Logger logger = LogManager.getLogger(Driver.class);
+    private static WebDriver driver;
+
+
     public static WebDriver get() {
 
-        if (driverPool.get() == null) {
-//
-            String browser = System.getProperty("browser") != null ? browser = System.getProperty("browser") : ConfigurationReader.get("browser");
-            switch (browser) {
-                case "chrome":
-                    WebDriverManager.chromedriver().setup();
-                    driverPool.set(new ChromeDriver());
-                    break;
-                case "chrome-headless":
-                    WebDriverManager.chromedriver().setup();
-                    driverPool.set(new ChromeDriver(new ChromeOptions().setHeadless(true)));
-                    break;
-                case "firefox":
-                    WebDriverManager.firefoxdriver().setup();
-                    driverPool.set(new FirefoxDriver());
-                    break;
-                case "firefox-headless":
-                    WebDriverManager.firefoxdriver().setup();
-                    driverPool.set(new FirefoxDriver(new FirefoxOptions().setHeadless(true)));
-                    break;
-                case "ie":
-                    if (!System.getProperty("os.name").toLowerCase().contains("windows"))
-                        throw new WebDriverException("Your OS doesn't support Internet Explorer");
-                    WebDriverManager.iedriver().setup();
-                    driverPool.set(new InternetExplorerDriver());
-                    break;
-                case "edge":
-                    if (!System.getProperty("os.name").toLowerCase().contains("windows"))
-                        throw new WebDriverException("Your OS doesn't support Edge");
-                    WebDriverManager.edgedriver().setup();
-                    driverPool.set(new EdgeDriver());
-                    break;
-                case "safari":
-                    if (!System.getProperty("os.name").toLowerCase().contains("mac"))
-                        throw new WebDriverException("Your OS doesn't support Safari");
-                    WebDriverManager.getInstance(SafariDriver.class).setup();
-                    driverPool.set(new SafariDriver());
-                    break;
+            if (driver == null) {
+                switch (ConfigurationReader.get("browser")) {
+                    case "chrome":
+                        WebDriverManager.chromedriver().setup();
+                        driver = new ChromeDriver();
+                        break;
+                    case "firefox":
+                        WebDriverManager.firefoxdriver().setup();
+                        driver = new FirefoxDriver();
+                        break;
+                    case "edge":
+                        WebDriverManager.edgedriver().setup();
+                        driver = new EdgeDriver();
+                        break;
+                    default:
+                        WebDriverManager.chromedriver().setup();
+                        driver = new ChromeDriver();
+                }
+                driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+                driver.manage().window().maximize();
+
+                logger.info("Starting WebDriver.");
+
             }
-        }
-        return driverPool.get();
+            return driver;
+
     }
     public static void closeDriver() {
-        driverPool.get().quit();
-        driverPool.remove();
+        if (driver != null) {
+            driver.quit();
+            driver = null;
+            logger.info("Closing WebDriver");
+        }
     }
 }

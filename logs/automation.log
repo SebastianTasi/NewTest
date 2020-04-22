@@ -1,0 +1,90 @@
+22.04.2020 15:25:18 INFO  Hooks:21 - ####### SCENARIO: Validate information on technical documentation when running cryptocurrency info call. ####### 
+22.04.2020 15:25:20 INFO  BackEnd_TaskStepDefs:146 - cryptocurrency/info call was successful with status code: 200
+22.04.2020 15:25:20 ERROR BackEnd_TaskStepDefs:164 - INFO RESPONSE class was not map properly!!!!!!
+22.04.2020 15:25:26 INFO  Driver:53 - Starting WebDriver.
+22.04.2020 15:25:26 INFO  Hooks:31 - ======= FAILED === Validate information on technical documentation when running cryptocurrency info call. =======
+22.04.2020 15:25:27 INFO  Driver:63 - Closing WebDriver
+22.04.2020 15:26:33 INFO  Hooks:21 - ####### SCENARIO: Validate information on technical documentation when running cryptocurrency info call. ####### 
+22.04.2020 15:26:35 INFO  BackEnd_TaskStepDefs:146 - cryptocurrency/info call was successful with status code: 200
+22.04.2020 15:26:35 ERROR BackEnd_TaskStepDefs:164 - INFO RESPONSE class was not map properly!!!!!!
+22.04.2020 15:26:41 INFO  Driver:53 - Starting WebDriver.
+22.04.2020 15:26:42 INFO  Hooks:31 - ======= FAILED === Validate information on technical documentation when running cryptocurrency info call. =======
+22.04.2020 15:26:42 INFO  Driver:63 - Closing WebDriver
+22.04.2020 15:26:54 INFO  Hooks:21 - ####### SCENARIO: Validate information on technical documentation when running cryptocurrency info call. ####### 
+22.04.2020 15:26:56 INFO  BackEnd_TaskStepDefs:146 - cryptocurrency/info call was successful with status code: 200
+22.04.2020 15:26:56 ERROR BackEnd_TaskStepDefs:164 - INFO RESPONSE class was not map properly!!!!!!
+22.04.2020 15:27:02 INFO  Driver:53 - Starting WebDriver.
+22.04.2020 15:27:02 INFO  Hooks:31 - ======= FAILED === Validate information on technical documentation when running cryptocurrency info call. =======
+22.04.2020 15:27:03 INFO  Driver:63 - Closing WebDriver
+22.04.2020 15:27:19 INFO  Hooks:21 - ####### SCENARIO: Validate information on technical documentation when running cryptocurrency info call. ####### 
+22.04.2020 15:27:21 INFO  BackEnd_TaskStepDefs:146 - cryptocurrency/info call was successful with status code: 200
+22.04.2020 15:27:21 ERROR BackEnd_TaskStepDefs:164 - INFO RESPONSE class was not map properly!!!!!!
+22.04.2020 15:27:27 INFO  Driver:53 - Starting WebDriver.
+22.04.2020 15:27:27 INFO  Hooks:31 - ======= FAILED === Validate information on technical documentation when running cryptocurrency info call. =======
+22.04.2020 15:27:28 INFO  Driver:63 - Closing WebDriver
+22.04.2020 15:30:19 INFO  Hooks:21 - ####### SCENARIO: Retrieve the ID`s of the currencies converted to Bolivian Boliviano ####### 
+22.04.2020 15:30:21 INFO  BackEnd_TaskStepDefs:71 - cryptocurrency/map call was successful with status code: 200
+22.04.2020 15:30:21 INFO  BackEnd_TaskStepDefs:80 - {"status":{"timestamp":"2020-04-22T14:30:21.020Z","error_code":0,"error_message":null,"elapsed":8,"credit_count":1,"notice":null},"data":[{"id":1,"name":"Bitcoin","symbol":"BTC","slug":"bitcoin","is_active":1,"rank":1,"first_historical_data":"2013-04-28T18:47:21.000Z","last_historical_data":"2020-04-22T14:24:05.000Z","platform":null},{"id":1027,"name":"Ethereum","symbol":"ETH","slug":"ethereum","is_active":1,"rank":2,"first_historical_data":"2015-08-07T14:49:30.000Z","last_historical_data":"2020-04-22T14:24:05.000Z","platform":null},{"id":825,"name":"Tether","symbol":"USDT","slug":"tether","is_active":1,"rank":4,"first_historical_data":"2015-02-25T13:34:26.000Z","last_historical_data":"2020-04-22T14:24:05.000Z","platform":{"id":83,"name":"Omni","symbol":"OMNI","slug":"omni","token_address":"31"}}]}
+22.04.2020 15:30:21 INFO  BackEnd_TaskStepDefs:117 - {"status":{"timestamp":"2020-04-22T14:30:21.381Z","error_code":0,"error_message":null,"elapsed":11,"credit_count":1,"notice":null},"data":{"id":1,"symbol":"BTC","name":"Bitcoin","amount":1,"last_updated":"2020-04-22T14:28:53.000Z","quote":{"BOB":{"price":48835.00772966733,"last_updated":"2020-04-22T14:29:04.000Z"}}}}
+22.04.2020 15:30:21 INFO  BackEnd_TaskStepDefs:124 - 1 of BTC converted to BOB has the value of: 48835.00772966733
+22.04.2020 15:30:21 INFO  BackEnd_TaskStepDefs:117 - {"status":{"timestamp":"2020-04-22T14:30:21.628Z","error_code":0,"error_message":null,"elapsed":9,"credit_count":1,"notice":null},"data":{"id":1027,"symbol":"ETH","name":"Ethereum","amount":1,"last_updated":"2020-04-22T14:28:28.000Z","quote":{"BOB":{"price":1248.5416200637953,"last_updated":"2020-04-22T14:29:04.000Z"}}}}
+22.04.2020 15:30:21 INFO  BackEnd_TaskStepDefs:124 - 1 of ETH converted to BOB has the value of: 1248.5416200637953
+22.04.2020 15:30:21 INFO  BackEnd_TaskStepDefs:117 - {"status":{"timestamp":"2020-04-22T14:30:21.860Z","error_code":0,"error_message":null,"elapsed":13,"credit_count":1,"notice":null},"data":{"id":825,"symbol":"USDT","name":"Tether","amount":1,"last_updated":"2020-04-22T14:28:32.000Z","quote":{"BOB":{"price":6.920599346734209,"last_updated":"2020-04-22T14:29:04.000Z"}}}}
+22.04.2020 15:30:21 INFO  BackEnd_TaskStepDefs:124 - 1 of USDT converted to BOB has the value of: 6.920599346734209
+22.04.2020 15:30:21 INFO  Hooks:31 - ======= PASSED === Retrieve the ID`s of the currencies converted to Bolivian Boliviano =======
+22.04.2020 15:30:21 INFO  Hooks:21 - ####### SCENARIO: Validate information on technical documentation when running cryptocurrency info call. ####### 
+22.04.2020 15:30:22 INFO  BackEnd_TaskStepDefs:146 - cryptocurrency/info call was successful with status code: 200
+22.04.2020 15:30:22 ERROR BackEnd_TaskStepDefs:164 - INFO RESPONSE class was not map properly!!!!!!
+22.04.2020 15:30:28 INFO  Driver:53 - Starting WebDriver.
+22.04.2020 15:30:28 INFO  Hooks:31 - ======= FAILED === Validate information on technical documentation when running cryptocurrency info call. =======
+22.04.2020 15:30:29 INFO  Driver:63 - Closing WebDriver
+22.04.2020 15:30:29 INFO  Hooks:21 - ####### SCENARIO: Verify that 100 results are displayed ####### 
+22.04.2020 15:30:34 INFO  Driver:53 - Starting WebDriver.
+22.04.2020 15:30:47 INFO  Hooks:31 - ======= PASSED === Verify that 100 results are displayed =======
+22.04.2020 15:30:47 INFO  Driver:63 - Closing WebDriver
+22.04.2020 15:30:47 INFO  Hooks:21 - ####### SCENARIO: Check as many values as you can, to verify all the options you selected are added to the watchlist ####### 
+22.04.2020 15:30:53 INFO  Driver:53 - Starting WebDriver.
+22.04.2020 15:31:17 INFO  Hooks:31 - ======= PASSED === Check as many values as you can, to verify all the options you selected are added to the watchlist =======
+22.04.2020 15:31:18 INFO  Driver:63 - Closing WebDriver
+22.04.2020 15:31:18 INFO  Hooks:21 - ####### SCENARIO: Check as many values as you can, to verify all the options you selected are added to the watchlist ####### 
+22.04.2020 15:31:23 INFO  Driver:53 - Starting WebDriver.
+22.04.2020 15:31:48 INFO  Hooks:31 - ======= PASSED === Check as many values as you can, to verify all the options you selected are added to the watchlist =======
+22.04.2020 15:31:48 INFO  Driver:63 - Closing WebDriver
+22.04.2020 15:31:48 INFO  Hooks:21 - ####### SCENARIO: Check as many values as you can, to verify all the options you selected are added to the watchlist ####### 
+22.04.2020 15:31:54 INFO  Driver:53 - Starting WebDriver.
+22.04.2020 15:32:18 INFO  Hooks:31 - ======= PASSED === Check as many values as you can, to verify all the options you selected are added to the watchlist =======
+22.04.2020 15:32:19 INFO  Driver:63 - Closing WebDriver
+22.04.2020 15:32:19 INFO  Hooks:21 - ####### SCENARIO: Check as many values as you can, to verify all the options you selected are added to the watchlist ####### 
+22.04.2020 15:32:24 INFO  Driver:53 - Starting WebDriver.
+22.04.2020 15:32:50 INFO  Hooks:31 - ======= PASSED === Check as many values as you can, to verify all the options you selected are added to the watchlist =======
+22.04.2020 15:32:50 INFO  Driver:63 - Closing WebDriver
+22.04.2020 15:32:50 INFO  Hooks:21 - ####### SCENARIO: Check as many values as you can, to verify all the options you selected are added to the watchlist ####### 
+22.04.2020 15:32:56 INFO  Driver:53 - Starting WebDriver.
+22.04.2020 15:33:22 INFO  Hooks:31 - ======= PASSED === Check as many values as you can, to verify all the options you selected are added to the watchlist =======
+22.04.2020 15:33:22 INFO  Driver:63 - Closing WebDriver
+22.04.2020 15:33:22 INFO  Hooks:21 - ####### SCENARIO: Check as many values as you can, to verify all the options you selected are added to the watchlist ####### 
+22.04.2020 15:33:28 INFO  Driver:53 - Starting WebDriver.
+22.04.2020 15:33:57 INFO  Hooks:31 - ======= FAILED === Check as many values as you can, to verify all the options you selected are added to the watchlist =======
+22.04.2020 15:33:58 INFO  Driver:63 - Closing WebDriver
+22.04.2020 15:33:58 INFO  Hooks:21 - ####### SCENARIO: Check against the data recorded ####### 
+22.04.2020 15:34:03 INFO  Driver:53 - Starting WebDriver.
+22.04.2020 15:34:42 INFO  Hooks:31 - ======= PASSED === Check against the data recorded =======
+22.04.2020 15:34:42 INFO  Driver:63 - Closing WebDriver
+22.04.2020 15:34:42 INFO  Hooks:21 - ####### SCENARIO: Check against the data recorded ####### 
+22.04.2020 15:34:48 INFO  Driver:53 - Starting WebDriver.
+22.04.2020 15:35:24 INFO  Hooks:31 - ======= PASSED === Check against the data recorded =======
+22.04.2020 15:35:24 INFO  Driver:63 - Closing WebDriver
+22.04.2020 15:35:24 INFO  Hooks:21 - ####### SCENARIO: Check against the data recorded ####### 
+22.04.2020 15:35:30 INFO  Driver:53 - Starting WebDriver.
+22.04.2020 15:35:42 INFO  Hooks:31 - ======= FAILED === Check against the data recorded =======
+22.04.2020 15:35:43 INFO  Driver:63 - Closing WebDriver
+22.04.2020 15:49:06 INFO  Hooks:21 - ####### SCENARIO: Retrieve the ID`s of the currencies converted to Bolivian Boliviano ####### 
+22.04.2020 15:49:09 INFO  BackEnd_TaskStepDefs:70 - cryptocurrency/map call was successful with status code: 200
+22.04.2020 15:49:09 INFO  BackEnd_TaskStepDefs:79 - {"status":{"timestamp":"2020-04-22T14:49:09.077Z","error_code":0,"error_message":null,"elapsed":5,"credit_count":1,"notice":null},"data":[{"id":1,"name":"Bitcoin","symbol":"BTC","slug":"bitcoin","is_active":1,"rank":1,"first_historical_data":"2013-04-28T18:47:21.000Z","last_historical_data":"2020-04-22T14:44:00.000Z","platform":null},{"id":1027,"name":"Ethereum","symbol":"ETH","slug":"ethereum","is_active":1,"rank":2,"first_historical_data":"2015-08-07T14:49:30.000Z","last_historical_data":"2020-04-22T14:44:00.000Z","platform":null},{"id":825,"name":"Tether","symbol":"USDT","slug":"tether","is_active":1,"rank":4,"first_historical_data":"2015-02-25T13:34:26.000Z","last_historical_data":"2020-04-22T14:44:00.000Z","platform":{"id":83,"name":"Omni","symbol":"OMNI","slug":"omni","token_address":"31"}}]}
+22.04.2020 15:49:09 INFO  BackEnd_TaskStepDefs:116 - {"status":{"timestamp":"2020-04-22T14:49:09.538Z","error_code":0,"error_message":null,"elapsed":11,"credit_count":1,"notice":null},"data":{"id":1,"symbol":"BTC","name":"Bitcoin","amount":1,"last_updated":"2020-04-22T14:48:47.000Z","quote":{"BOB":{"price":49205.0291817066,"last_updated":"2020-04-22T14:48:09.000Z"}}}}
+22.04.2020 15:49:09 INFO  BackEnd_TaskStepDefs:123 - 1 of BTC converted to BOB has the value of: 49205.0291817066
+22.04.2020 15:49:09 INFO  BackEnd_TaskStepDefs:116 - {"status":{"timestamp":"2020-04-22T14:49:09.818Z","error_code":0,"error_message":null,"elapsed":7,"credit_count":1,"notice":null},"data":{"id":1027,"symbol":"ETH","name":"Ethereum","amount":1,"last_updated":"2020-04-22T14:48:32.000Z","quote":{"BOB":{"price":1262.0575018614923,"last_updated":"2020-04-22T14:48:09.000Z"}}}}
+22.04.2020 15:49:09 INFO  BackEnd_TaskStepDefs:123 - 1 of ETH converted to BOB has the value of: 1262.0575018614923
+22.04.2020 15:49:10 INFO  BackEnd_TaskStepDefs:116 - {"status":{"timestamp":"2020-04-22T14:49:10.085Z","error_code":0,"error_message":null,"elapsed":13,"credit_count":1,"notice":null},"data":{"id":825,"symbol":"USDT","name":"Tether","amount":1,"last_updated":"2020-04-22T14:48:28.000Z","quote":{"BOB":{"price":6.92984131432096,"last_updated":"2020-04-22T14:48:09.000Z"}}}}
+22.04.2020 15:49:10 INFO  BackEnd_TaskStepDefs:123 - 1 of USDT converted to BOB has the value of: 6.92984131432096
+22.04.2020 15:49:10 INFO  Hooks:31 - ======= PASSED === Retrieve the ID`s of the currencies converted to Bolivian Boliviano =======

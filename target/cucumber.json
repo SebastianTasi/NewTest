@@ -3,26 +3,26 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2020-04-18T16:55:07.399Z",
+        "start_timestamp": "2020-04-22T14:49:05.067Z",
         "before": [
           {
             "result": {
-              "duration": 10302558400,
+              "duration": 1536048100,
               "status": "passed"
             },
             "match": {
-              "location": "Hooks.setUp()"
+              "location": "Hooks.before(Scenario)"
             }
           }
         ],
-        "line": 6,
-        "name": "Verify that 100 results are displayed",
+        "line": 5,
+        "name": "Retrieve the ID`s of the currencies converted to Bolivian Boliviano",
         "description": "",
-        "id": "test1;verify-that-100-results-are-displayed",
+        "id": "backendtask1;retrieve-the-id`s-of-the-currencies-converted-to-bolivian-boliviano",
         "after": [
           {
             "result": {
-              "duration": 695039000,
+              "duration": 4186200,
               "status": "passed"
             },
             "match": {
@@ -35,59 +35,128 @@
         "steps": [
           {
             "result": {
-              "duration": 7085440500,
+              "duration": 939375300,
               "status": "passed"
             },
-            "line": 7,
-            "name": "the user should open browser page on",
+            "line": 6,
+            "name": "User is using the API Key",
             "match": {
-              "location": "Test1StepDefs.the_user_should_open_browser_page_on()"
+              "location": "BackEnd_TaskStepDefs.user_is_using_the_API_Key()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 5124372600,
+              "duration": 1667669500,
               "status": "passed"
             },
-            "line": 8,
-            "name": "user is clicking View All",
+            "line": 7,
+            "name": "User is  performing the map call searching for the desired type of currency \"BTC,USDT,ETH\"",
             "match": {
-              "location": "Test1StepDefs.user_is_clicking_View_All()"
+              "arguments": [
+                {
+                  "val": "\"BTC,USDT,ETH\"",
+                  "offset": 76
+                }
+              ],
+              "location": "BackEnd_TaskStepDefs.user_is_performing_the_map_call_searching_for_the_desired_type_of_currency(String)"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 48276900,
+              "duration": 3220300,
               "status": "passed"
             },
-            "line": 9,
-            "name": "the results displayed \u003d 100",
+            "line": 8,
+            "name": "the status code for map is 200",
             "match": {
               "arguments": [
                 {
-                  "val": "100",
-                  "offset": 24
+                  "val": "200",
+                  "offset": 27
                 }
               ],
-              "location": "Test1StepDefs.the_results_displayed(Integer)"
+              "location": "BackEnd_TaskStepDefs.the_status_code_for_map_is(Integer)"
             },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 117014400,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "the user is retriving the ids of the current type of currency",
+            "match": {
+              "location": "BackEnd_TaskStepDefs.the_user_is_retriving_the_ids_of_the_current_type_of_currency(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "BTC",
+                  "1"
+                ]
+              },
+              {
+                "cells": [
+                  "USDT",
+                  "825"
+                ]
+              },
+              {
+                "cells": [
+                  "ETH",
+                  "1027"
+                ]
+              }
+            ],
             "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 807740700,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "the user performs the tool conversion call and converts to desired  currency \"BOB\" and amount 1",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"BOB\"",
+                  "offset": 77
+                },
+                {
+                  "val": "1",
+                  "offset": 94
+                }
+              ],
+              "location": "BackEnd_TaskStepDefs.the_user_performs_the_tool_conversion_call_and_converts_to_desired_currency_and_amount(String,Integer)"
+            },
+            "keyword": "When "
           }
         ],
         "tags": [
           {
-            "name": "@wip"
+            "name": "@task1"
           }
         ]
       }
     ],
-    "name": "Test1",
+    "name": "BackEndTask1",
     "description": "",
-    "id": "test1",
+    "id": "backendtask1",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/Test1.feature",
-    "tags": []
+    "uri": "file:src/test/resources/features/BackEnd_Task1.feature",
+    "tags": [
+      {
+        "name": "@task1",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
   }
 ]
